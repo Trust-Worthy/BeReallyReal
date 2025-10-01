@@ -12,7 +12,10 @@ import ParseSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    // main entry point to swift project: did Finish Launch With options
+    // this is where services are configured: Parse , Firebase , etc
+    // setup dependency injection
+    // initialize app-wide state
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
