@@ -29,37 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Missing Back4App credentials in Info.plist")
         }
         
-        // Define a Parse Object
-        struct GameScore: ParseObject {
-            var originalData: Data?
-
-            // Required fields
-            var objectId: String?
-            var createdAt: Date?
-            var updatedAt: Date?
-            var ACL: ParseACL?
-
-            // Custom fields
-            var score: Int?
-            var playerName: String?
-            var cheatMode: Bool?
-        }
-
-        // Save a test object
-        Task {
-            var gameScore = GameScore()
-            gameScore.score = 5000
-            gameScore.playerName = "Kingsley 🐶"
-            gameScore.cheatMode = true
-
-            do {
-                try await gameScore.save()
-                print("👩‍🔬✅ SUCCESS! Parse object saved")
-            } catch {
-                print("👩‍🔬❌ Error saving Parse object: \(error)")
-            }
-        }
-
         
         return true
     }
