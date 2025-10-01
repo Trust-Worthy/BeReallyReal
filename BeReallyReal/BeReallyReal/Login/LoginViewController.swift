@@ -29,6 +29,21 @@ class LoginViewController: UIViewController {
             showMissingFieldsAlert()
             return
         }
+        
+        // Allow user to login to Back4App
+        User.login(username: username, password: password) { [weak self] result in
+            
+            switch result {
+            case .success(let user):
+                print("✅ Successfully logged in as user: \(user)")
+                
+                // Post a notification that the user has successfully logged in
+                NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
+            case .failure(let error):
+                self?.showAlert(description: error.localizedDescription)
+            }
+            
+        }
     }
     
     // MARK: - Alerts
