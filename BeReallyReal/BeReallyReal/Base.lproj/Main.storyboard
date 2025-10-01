@@ -84,6 +84,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                                <connections>
+                                                    <action selector="onLoginTapped:" destination="m84-R0-0xz" eventType="touchUpInside" id="yar-ss-m1e"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -124,6 +127,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aHx-vI-9yG"/>
+                    <connections>
+                        <outlet property="passwordField" destination="0cr-fu-y9z" id="hfB-aO-YFd"/>
+                        <outlet property="usernameField" destination="fSV-MY-8a6" id="ZJD-s3-Wc4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WwW-VJ-RPh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
