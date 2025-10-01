@@ -33,7 +33,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Check if current user exists
         if User.current != nil {
-            
+            login()
         }
     }
     
@@ -41,9 +41,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // MARK: - Login / Logout
     private func login() {
         
+//        // Create the feed view controller programmatically
+//        let feedVC = FeedViewController()
+//        
+//        // Wrap it in a navigation controller
+//        let navController = UINavigationController(rootViewController: feedVC)
+//        
+//        // Optional: Customize navigation appearance if you want
+//        navController.navigationBar.prefersLargeTitles = true
+//        navController.navigationBar.tintColor = .white
+//        navController.navigationBar.barTintColor = .systemBlue // or your app color
+//        navController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+//        
+//        // Set it as the window's rootViewController
+//        self.window?.rootViewController = navController
+//        self.window?.makeKeyAndVisible()
         let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
         self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.feedNavigationControllerIdentifier)
-    }
+}
     
     
     

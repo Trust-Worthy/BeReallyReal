@@ -32,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Missing Back4App credentials in Info.plist")
         }
         
-        
         return true
     }
 

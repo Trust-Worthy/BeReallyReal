@@ -7,10 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673A9C962E8D023D00BD1302 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 673A9C952E8D023D00BD1302 /* Alamofire */; };
+		673A9C9B2E8D026F00BD1302 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 673A9C9A2E8D026F00BD1302 /* AlamofireImage */; };
 		6756B2962E8CCDB90060A7D2 /* ParseLiveQuery in Frameworks */ = {isa = PBXBuildFile; productRef = 6756B2952E8CCDB90060A7D2 /* ParseLiveQuery */; };
 		6756B2982E8CCDB90060A7D2 /* ParseObjC in Frameworks */ = {isa = PBXBuildFile; productRef = 6756B2972E8CCDB90060A7D2 /* ParseObjC */; };
 		6756B29B2E8CCDE20060A7D2 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6756B29A2E8CCDE20060A7D2 /* ParseSwift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		673A9CA12E8D0AC400BD1302 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6756B27C2E8B9B3E0060A7D2 /* BeReallyReal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeReallyReal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +58,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6756B2982E8CCDB90060A7D2 /* ParseObjC in Frameworks */,
+				673A9C962E8D023D00BD1302 /* Alamofire in Frameworks */,
 				6756B29B2E8CCDE20060A7D2 /* ParseSwift in Frameworks */,
 				6756B2962E8CCDB90060A7D2 /* ParseLiveQuery in Frameworks */,
+				673A9C9B2E8D026F00BD1302 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +94,7 @@
 				6756B2782E8B9B3E0060A7D2 /* Sources */,
 				6756B2792E8B9B3E0060A7D2 /* Frameworks */,
 				6756B27A2E8B9B3E0060A7D2 /* Resources */,
+				673A9CA12E8D0AC400BD1302 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,6 +108,8 @@
 				6756B2952E8CCDB90060A7D2 /* ParseLiveQuery */,
 				6756B2972E8CCDB90060A7D2 /* ParseObjC */,
 				6756B29A2E8CCDE20060A7D2 /* ParseSwift */,
+				673A9C952E8D023D00BD1302 /* Alamofire */,
+				673A9C9A2E8D026F00BD1302 /* AlamofireImage */,
 			);
 			productName = BeReallyReal;
 			productReference = 6756B27C2E8B9B3E0060A7D2 /* BeReallyReal.app */;
@@ -122,6 +142,8 @@
 			packageReferences = (
 				6756B2942E8CCDB90060A7D2 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */,
 				6756B2992E8CCDE20060A7D2 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				673A9C942E8D023D00BD1302 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				673A9C992E8D026F00BD1302 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6756B27D2E8B9B3E0060A7D2 /* Products */;
@@ -363,6 +385,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		673A9C942E8D023D00BD1302 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		673A9C992E8D026F00BD1302 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
 		6756B2942E8CCDB90060A7D2 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/parse-community/Parse-SDK-iOS-OSX";
@@ -382,6 +420,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		673A9C952E8D023D00BD1302 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 673A9C942E8D023D00BD1302 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		673A9C9A2E8D026F00BD1302 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 673A9C992E8D026F00BD1302 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
 		6756B2952E8CCDB90060A7D2 /* ParseLiveQuery */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6756B2942E8CCDB90060A7D2 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */;

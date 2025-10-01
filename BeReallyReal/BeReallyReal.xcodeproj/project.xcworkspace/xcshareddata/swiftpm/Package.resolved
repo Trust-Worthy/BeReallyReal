@@ -1,6 +1,24 @@
 {
-  "originHash" : "5f7e7742d468a556ad47778828907203dcbeb642a96bc92dadf32b83b5b2eb95",
+  "originHash" : "d3a4b1add2b0056674730ebfc0382e01c27ca4a6498e3041889b6077e1b4daa8",
   "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "alamofireimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/AlamofireImage.git",
+      "state" : {
+        "revision" : "1eaf3b6c6882bed10f6e7b119665599dd2329aa1",
+        "version" : "4.3.0"
+      }
+    },
     {
       "identity" : "bolts-objc",
       "kind" : "remoteSourceControl",
