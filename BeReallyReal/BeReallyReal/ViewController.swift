@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  BeReallyReal
 //
-//  Created by Jonathan Bateman on 9/29/25.
+//  Created by Trust-Worthy on 9/29/25.
 //
 
 import UIKit
