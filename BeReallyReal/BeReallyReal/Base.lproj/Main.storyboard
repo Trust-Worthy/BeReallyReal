@@ -31,8 +31,22 @@
                     <view key="view" contentMode="scaleToFill" id="E7H-Z7-vzH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lMg-hI-oye">
+                                <rect key="frame" x="24" y="198" width="345" height="200"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dra-dL-GOt">
+                                <rect key="frame" x="96" y="419" width="200" height="110"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="w1P-vO-6Yd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lMg-hI-oye" firstAttribute="centerY" secondItem="E7H-Z7-vzH" secondAttribute="centerY" id="Arp-O4-zYy"/>
+                            <constraint firstItem="dra-dL-GOt" firstAttribute="centerX" secondItem="E7H-Z7-vzH" secondAttribute="centerX" id="aKQ-RJ-uQX"/>
+                            <constraint firstItem="lMg-hI-oye" firstAttribute="leading" secondItem="w1P-vO-6Yd" secondAttribute="leading" constant="24" id="eek-eu-Pcc"/>
+                            <constraint firstItem="w1P-vO-6Yd" firstAttribute="trailing" secondItem="lMg-hI-oye" secondAttribute="trailing" constant="24" id="qwY-oJ-TaF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aHx-vI-9yG"/>
                 </viewController>
