@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6756B2962E8CCDB90060A7D2 /* ParseLiveQuery in Frameworks */ = {isa = PBXBuildFile; productRef = 6756B2952E8CCDB90060A7D2 /* ParseLiveQuery */; };
+		6756B2982E8CCDB90060A7D2 /* ParseObjC in Frameworks */ = {isa = PBXBuildFile; productRef = 6756B2972E8CCDB90060A7D2 /* ParseObjC */; };
+		6756B29B2E8CCDE20060A7D2 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6756B29A2E8CCDE20060A7D2 /* ParseSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6756B27C2E8B9B3E0060A7D2 /* BeReallyReal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeReallyReal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6756B2982E8CCDB90060A7D2 /* ParseObjC in Frameworks */,
+				6756B29B2E8CCDE20060A7D2 /* ParseSwift in Frameworks */,
+				6756B2962E8CCDB90060A7D2 /* ParseLiveQuery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,9 @@
 			);
 			name = BeReallyReal;
 			packageProductDependencies = (
+				6756B2952E8CCDB90060A7D2 /* ParseLiveQuery */,
+				6756B2972E8CCDB90060A7D2 /* ParseObjC */,
+				6756B29A2E8CCDE20060A7D2 /* ParseSwift */,
 			);
 			productName = BeReallyReal;
 			productReference = 6756B27C2E8B9B3E0060A7D2 /* BeReallyReal.app */;
@@ -107,6 +119,10 @@
 			);
 			mainGroup = 6756B2732E8B9B3E0060A7D2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6756B2942E8CCDB90060A7D2 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */,
+				6756B2992E8CCDE20060A7D2 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6756B27D2E8B9B3E0060A7D2 /* Products */;
 			projectDirPath = "";
@@ -337,6 +353,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6756B2942E8CCDB90060A7D2 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-SDK-iOS-OSX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		6756B2992E8CCDE20060A7D2 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6756B2952E8CCDB90060A7D2 /* ParseLiveQuery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6756B2942E8CCDB90060A7D2 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */;
+			productName = ParseLiveQuery;
+		};
+		6756B2972E8CCDB90060A7D2 /* ParseObjC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6756B2942E8CCDB90060A7D2 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */;
+			productName = ParseObjC;
+		};
+		6756B29A2E8CCDE20060A7D2 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6756B2992E8CCDE20060A7D2 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6756B2742E8B9B3E0060A7D2 /* Project object */;
 }

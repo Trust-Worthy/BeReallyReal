@@ -2,10 +2,11 @@
 //  AppDelegate.swift
 //  BeReallyReal
 //
-//  Created by Jonathan Bateman on 9/29/25.
+//  Created by Trust-Worthy on 9/29/25.
 //
 
 import UIKit
+import ParseSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        
         return true
     }
 
