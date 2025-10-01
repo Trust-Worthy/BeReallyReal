@@ -35,7 +35,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // MARK: - Login / Logout
     private func login() {
         
-        let storyboard = UIStoryboard(name: , bundle: <#T##Bundle?#>)
+        let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.feedNavigationControllerIdentifier)
     }
     
     
